@@ -1,11 +1,11 @@
 #include <iostream>
-#include "./data_structure/graph.cpp"
-#include "./algorithms/dijkstra.cpp"
-#include "./algorithms/bfs.cpp"
+#include "graph.cpp"
+#include "dijkstra.cpp"
+#include "bfs.cpp"
 
 int main() {
     Graph movieGraph;
-    movieGraph.buildGraphFromCSV("../data/cleaned_data/actor-movie-data.csv");
+    movieGraph.buildGraphFromCSV("actor-movie-data.csv");
     unordered_map<int, string> actorNames = movieGraph.getActorNames();
     unordered_map<int, string> movieNames = movieGraph.getMovieNames();
 
