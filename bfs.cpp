@@ -1,5 +1,5 @@
 #pragma once
-#include "../data_structure/graph.cpp"
+#include "graph.cpp"
 #include <queue>
 #include <vector>
 #include <unordered_map>
